@@ -49,6 +49,10 @@ h3 {
     text-decoration: none;
 }
 
+.header a:hover {
+    text-decoration: underline;
+}
+
 .user-info {
     text-align: right;   
 }
@@ -63,8 +67,14 @@ h3 {
     background-color: var(--light-grey);
     border: none;
     border-radius: 15px;
+    height: 1.5rem;
+    vertical-align: top;
 }
 
+#search:focus {
+    box-shadow: 2px 2px 15px grey;
+    outline: none;
+}
 
 .notification {
     background-color: white;
@@ -74,11 +84,15 @@ h3 {
     cursor: pointer;
 }
 
+.notification img:hover {
+    width: 25px;
+    height: 25px;
+}
+
 .user-info a {
     font-size: 1.2rem;
     font-weight: 700;
 }
-
 
 .greeting {
     display: grid;
@@ -89,6 +103,7 @@ h3 {
 
 .action {
     text-align: right;
+    
 }
 
 .action button {
@@ -100,12 +115,22 @@ h3 {
     font-size: inherit;
     color: white;
     font-weight: 700;
-    margin-left: 1em;   
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.action button:hover {
+    background-color: var(--yellow);
+    box-shadow: 2px 2px 15px grey;
+}
+
+.action button:active {
+    opacity: .8;
 }
 
 .nav {
     background-color: var(--blue);
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     color: white;
     padding: 2em 2em 2em 1em;
     display: grid;
@@ -147,7 +172,7 @@ h3 {
 .white {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 2px 2px 20px grey;
+    box-shadow: 2px 2px 10px lightgray;
 }
 
 .content {
@@ -170,6 +195,10 @@ h3 {
     padding: 1em;
     display: grid;
     margin: 0 1em;
+}
+
+.article:hover {
+    box-shadow: 2px 2px 20px grey;
 }
 
 .article h3 {
@@ -222,6 +251,17 @@ h3 {
     padding: 1em;
 }
 
+.trending a,
+.trending a:visited {
+    color: inherit;
+    opacity: .8;
+    text-decoration: none;
+}
+
+.trending a:hover {
+    color: var(--blue);
+}
+
 .info {
     display: inline-block;
     margin-left: 1em;
@@ -244,3 +284,17 @@ h3 {
     color: inherit;
 }
 
+.darknab {
+    text-align: center;
+    background-color: var(--light-grey);
+}
+
+.darknab a,
+.darknab a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.darknab a:hover {
+    color: var(--blue);
+}
